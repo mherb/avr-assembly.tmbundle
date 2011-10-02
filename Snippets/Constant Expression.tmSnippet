@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.equ ${1:label} = ${2:expression}
+$0</string>
+	<key>name</key>
+	<string>Constant Expression</string>
+	<key>scope</key>
+	<string>source.avrasm</string>
+	<key>tabTrigger</key>
+	<string>equ</string>
+	<key>uuid</key>
+	<string>C22FB51E-02F2-4A9D-8671-7A2523D0C52A</string>
+</dict>
+</plist>

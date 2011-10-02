@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string># Source some support functions we need.
+. "${TM_SUPPORT_PATH}/lib/html.sh"
+. "${TM_SUPPORT_PATH}/lib/webpreview.sh"
+
+if [[ -z "${AVR_ASSEMBLER}" ]] ; then
+    AVR_ASSEMBLER="tavrasm -v \"$TM_FILEPATH\""
+fi
+
+html_header 'Assemble'
+
+echo "&lt;pre&gt;"
+eval $AVR_ASSEMBLER
+echo "&lt;/pre&gt;"
+
+html_footer</string>
+	<key>fallbackInput</key>
+	<string>document</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
+	<key>name</key>
+	<string>Assemble</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.avrasm</string>
+	<key>uuid</key>
+	<string>B7F5454A-8F44-4614-85ED-1ED77DB1F2D1</string>
+</dict>
+</plist>

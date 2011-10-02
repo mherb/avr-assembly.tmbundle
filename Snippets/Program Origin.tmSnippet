@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.org ${1:expression}
+$0</string>
+	<key>name</key>
+	<string>Program Origin</string>
+	<key>scope</key>
+	<string>source.avrasm</string>
+	<key>tabTrigger</key>
+	<string>org</string>
+	<key>uuid</key>
+	<string>8FABEC8F-1952-42B1-975E-E81673A75A14</string>
+</dict>
+</plist>

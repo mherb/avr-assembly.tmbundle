@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.dseg
+	$0</string>
+	<key>name</key>
+	<string>Data Segment</string>
+	<key>scope</key>
+	<string>source.avrasm</string>
+	<key>tabTrigger</key>
+	<string>dseg</string>
+	<key>uuid</key>
+	<string>577FC8CD-F160-4263-B1CE-22B1A18270DC</string>
+</dict>
+</plist>

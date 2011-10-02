@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.byte ${1:size}
+$0</string>
+	<key>name</key>
+	<string>Reserve byte</string>
+	<key>scope</key>
+	<string>source.avrasm</string>
+	<key>tabTrigger</key>
+	<string>byte</string>
+	<key>uuid</key>
+	<string>A7925DEE-85A2-4298-ABEE-49C646561A2A</string>
+</dict>
+</plist>

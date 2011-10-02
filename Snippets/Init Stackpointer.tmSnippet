@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>; Init Stackpointer
+ldi	${1:temp}, LOW(RAMEND)
+out	SPL, $1
+ldi	$1, HIGH(RAMEND)
+out	SPH, $1
+$0</string>
+	<key>name</key>
+	<string>Init Stackpointer</string>
+	<key>scope</key>
+	<string>source.avrasm</string>
+	<key>tabTrigger</key>
+	<string>stack</string>
+	<key>uuid</key>
+	<string>C506EDB8-4EF8-4C58-8DE0-A9A05B4A4EDB</string>
+</dict>
+</plist>
