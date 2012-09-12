@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string># Source some support functions we need.
+. "${TM_SUPPORT_PATH}/lib/html.sh"
+. "${TM_SUPPORT_PATH}/lib/webpreview.sh"
+
+html_header 'Run'
+
+echo "&lt;pre&gt;"
+assemble
+SUCCESS=$?
+echo "&lt;/pre&gt;"
+
+if [ $SUCCESS -eq 0 ]
+then
+  # execute upload only if assemble was successful
+  echo "&lt;pre&gt;"
+  upload
+  echo "&lt;/pre&gt;"
+fi
+
+html_footer</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.avrasm</string>
+	<key>uuid</key>
+	<string>19ECA8D7-2159-498D-B0DA-0D9FD740D500</string>
+</dict>
+</plist>
