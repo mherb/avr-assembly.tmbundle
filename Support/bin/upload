@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+DEFAULT_AVR_UPLOAD="echo \"ERROR: You have to set the environment variable \$AVR_UPLOAD in order to use this command\" && false"
+
+# Strip file extension to get the base name of the compiled file to
+# determine the programming file name
+AVR_UPLOAD_FILE=${TM_FILEPATH%.*}
+
+eval ${AVR_UPLOAD:-$DEFAULT_AVR_UPLOAD}
