@@ -6,4 +6,4 @@ DEFAULT_AVR_UPLOAD="echo \"ERROR: You have to set the environment variable \$AVR
 # determine the programming file name
 AVR_UPLOAD_FILE=${TM_FILEPATH%.*}
 
-eval ${AVR_UPLOAD:-$DEFAULT_AVR_UPLOAD}
+eval ${AVR_UPLOAD:-$DEFAULT_AVR_UPLOAD} 2>&1
