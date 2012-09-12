@@ -9,14 +9,10 @@
 . "${TM_SUPPORT_PATH}/lib/html.sh"
 . "${TM_SUPPORT_PATH}/lib/webpreview.sh"
 
-if [[ -z "${AVR_ASSEMBLER}" ]] ; then
-    AVR_ASSEMBLER="tavrasm -v \"$TM_FILEPATH\""
-fi
-
 html_header 'Assemble'
 
 echo "&lt;pre&gt;"
-eval $AVR_ASSEMBLER
+assemble
 echo "&lt;/pre&gt;"
 
 html_footer</string>

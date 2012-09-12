@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+DEFAULT_AVR_ASSEMBLER="tavrasm -v \"$TM_FILEPATH\""
+eval ${AVR_ASSEMBLER:-$DEFAULT_AVR_ASSEMBLER}
