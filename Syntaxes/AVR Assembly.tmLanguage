@@ -42,7 +42,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(r|R)(([12]?[0-9])|(3[01]))\b</string>
+			<string>\b((r|R)(([12]?[0-9])|(3[01]))|[XYZ])\b</string>
 			<key>name</key>
 			<string>variable.language.registers.avrasm</string>
 		</dict>
