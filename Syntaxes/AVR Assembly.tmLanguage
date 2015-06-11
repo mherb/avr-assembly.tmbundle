@@ -12,7 +12,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(add|adc|adiw|sub|subi|sbc|sbci|sbiw|and|andi|or|ori|eor|com|rd|neg|sbr|cbr|inc|dec|tst|clr|ser|mul|rjmp|ijmp|jmp|rcall|icall|call|ret|reti|cpse|cp|cpc|cpi|sbrc|sbrs|sbic|sbis|p, b|brbs|brbc|breq|brne|brcs|brcc|brsh|brlo|brmi|brpl|brge|brlt|brhs|brhc|brts|brtc|brvs|brvc|brie|brid|mov|ldi|lds|ld|ldd|sts|st|std|lpm|in|out|push|pop|lsl|lsr|rol|ror|asr|swap|bset|bclr|sbi|cbi|bst|bld|sec|clc|sen|cln|sez|clz|sei|cli|ses|cls|sev|clv|set|clt|seh|clh|nop|sleep|wdr)\b(?i)</string>
+			<string>(?i)\b(add|adc|adiw|sub|subi|sbc|sbci|sbiw|and|andi|or|ori|eor|com|neg|sbr|cbr|inc|dec|tst|clr|ser|mul|muls|mulsu|fmul|fmuls|fmulsu|des|rjmp|ijmp|eijmp|jmp|rcall|icall|eicall|call|ret|reti|cpse|cp|cpc|cpi|sbrc|sbrs|sbic|sbis|brbs|brbc|breq|brne|brcs|brcc|brsh|brlo|brmi|brpl|brge|brlt|brhs|brhc|brts|brtc|brvs|brvc|brie|brid|mov|movw|ldi|lds|ld|ldd|ld|ldd|sts|st|std|st|std|lpm|elpm|spm|in|out|push|pop|xch|las|lac|lat|lsl|lsr|rol|ror|asr|swap|bset|bclr|sbi|cbi|bst|bld|sec|clc|sen|cln|sez|clz|sei|cli|ses|cls|sev|clv|set|clt|seh|clh|break|nop|sleep|wdr)\b(?i)</string>
 			<key>name</key>
 			<string>keyword.instruction.avrasm</string>
 		</dict>
