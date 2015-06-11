@@ -6,17 +6,17 @@ This is a TextMate Bundle to help developing stuff in AVR Assembly used by Atmel
 
 The recommended way to install bundles is to use Git so you can update the bundle easily. To do so, open a Terminal, change to your bundle location and clone this repository:
 
-    mkdir -p ~/Library/Application\ Support/TextMate/Bundles
-    cd ~/Library/Application\ Support/TextMate/Bundles
+    mkdir -p ~/Library/Application\ Support/Avian/Bundles
+    cd ~/Library/Application\ Support/Avian/Bundles
     git clone git://github.com/mherb/avr-assembly.tmbundle
 
 Alternatively you can also download the source as Zip or Tarball, extract it and place it into the bundle location noted above.
 
-The above commands assume you're using TextMate 1. In case you have TextMate 2, then you have to use the bundle location
+The above commands assume you're using TextMate 2. In case you still have TextMate 1.x, then you have to use the bundle location
 
-    ~/Library/Application\ Support/Avian/Pristine\ Copy/Bundles
+    ~/Library/Application\ Support/TextMate/Bundles
 
-instead of `~/Library/Application\ Support/TextMate/Bundles`.
+instead of `~/Library/Application\ Support/Avian/Bundles`.
 
 If you're using TextMate 1 you should reload the bundles in TextMate using *Bundles -> Bundle Editor -> Reload Bundles*.
 
