@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>lss</string>
+	</array>
+	<key>name</key>
+	<string>AVR Disassembly</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.localname</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.other</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>string.other</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*([0-9a-f]+:)\t([0-9a-f ]{51}) (.+?)$</string>
+			<key>name</key>
+			<string>meta.data.avrdisasm</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^\s*([0-9a-f]+:)\t([^\t]+)\t</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.tag.localname</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.other</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>$</string>
+			<key>name</key>
+			<string>meta.instruction.avrdisasm</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.avrasm</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.avrdisasm</string>
+	<key>uuid</key>
+	<string>F37036AB-9BD1-49B4-AD31-1712211A3A86</string>
+</dict>
+</plist>
